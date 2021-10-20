@@ -61,6 +61,13 @@ def test_numerePareDinLista():
 
 
 def procesareLista(lst):
+    '''
+    Proceseaza lista astfel incat sa se creeze o lista prin înlocuirea fiecărui număr cu un tuplu format din două numere de pe
+    poziții distincte din listă care adunate dau acel număr, dacă se poate. Dacă există mai multe soluții o va alege pe prima, iar
+    dacă nu se poate, nu se înlocuiește numărul.
+    :param lst: Lista de numere intregi.
+    :return: Returneaza lista dupa procesare.
+    '''
     rezultat = []
     for x in lst:
         ok = 0
