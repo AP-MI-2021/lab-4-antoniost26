@@ -16,7 +16,7 @@ citită de la tastatură, "NU" in caz contrar.
     :param lst: Lista de numere intregi.
     :return: Returneaza (afiseaza in consola) "DA" in caz ca numarul se regasesste in lista incepand de la respectiva pozitie, "NU" in caz contrar.
     '''
-    for i in range(x, len(lst) - 1):
+    for i in range(x, len(lst), 1):
         if lst[i] == y:
             return print("DA")
     return print("NU")
@@ -114,7 +114,7 @@ def main():
         elif optiune == "2":
             x = input("Dati o pozitie: ")
             y = input("Dati un numar: ")
-            numarRegasitDeLaoPozitieData(int(x), y, lst)
+            numarRegasitDeLaoPozitieData(int(x), int(y), lst)
         elif optiune == "3":
             print(sumaTuturorNumerelorIntregi(lst))
         elif optiune == "4":
